@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Baloo Tammudu', sans-serif;
+  font-size: 90px;
+  color: white;
+}
+
+li {
+  list-style: none;
+  display: inline;
+}
+
+
+.cover {
+  /*z-index: 2;*/
+  background: rgba(37,42,48,0.15);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-image: url(background-cover.jpg);
+  /*background-repeat: no-repeat;*/
+  /*background-position: center;*/
+  /*background-size: cover;*/
+
+}
+
+#logo {
+  background-image: url(logo.jpg);
+  width: 50px;
+  height: 50px;
+  margin: auto;
+}
+
+.hire {
+  /*margin-top: 25%;*/
+  /*height: 100px;*/
+  width: 500px;
+  height: auto;
+  margin: 10px auto auto auto;
+  border: 5px solid rgba(255,255,0,1);
+  border-radius: 50px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  background-color: rgba(0,0,0,0);
+  transition: width 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.hire:hover {
+  background-color: rgba(255,255,255,1);
+  color: black;
+  width: 600px;
+  transition: width 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.secondPage {
+  background-color: rgba(255,255,255,1);
+}
+
+.thirdPage {
+  background-color: rgba(238, 238, 238, 1);
+}
+
+#secondPage {
+  height: 1200px;
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+#thirdPage {
+  height: 3200px;
+  width: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+#container1 {
+  width: 1000px;
+  height: auto;
+  margin: 50px auto 0 auto;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#container2 {
+  display: flex;
+  flex-direction: row;
+  margin: 50px auto auto auto;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#p1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+#p2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+#section1, #section2, #section3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#section1_1 {
+  font-size: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#section1_2 {
+  font-size: 30px;
+  margin: 40px auto auto auto;
+  text-align: center;
+  color: rgba(147,164,170,1);
+}
+
+#email {
+  text-decoration: none;
+  color: rgba(94,164,247,1);
+}
+
+#email:hover {
+  color: darkblue;
+}
+
+#project2 {
+  font-size: 50px;
+}
+
+#part1 {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  padding-right: 7rem;
+}
+
+.project-tags {
+  color: #b2c6cd;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.project-tags::before {
+  content: "\2022";
+  /*margin-right: 4px;*/
+  color: yellow;
+  font-size: 1.8rem;
+}
+
+#part2 {
+  margin-left: 0;
+  float: right;
+}
+
+@media (min-width: 550px) {
+
+#section1 {
+}
+#section1_2 {
+    width: 100%;
+}
+
+#part2 {
+  width: 48%;
+}
+}
