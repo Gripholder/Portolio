@@ -5,8 +5,8 @@ body {
 h1 {
   text-align: center;
   margin-top: 10%;
-  font-family: 'Baloo Tammudu', sans-serif;
-  font-size: 90px;
+  font-family: "Baloo Tammudu", sans-serif;
+  font-size: 50px;
   color: white;
 }
 
@@ -15,10 +15,16 @@ li {
   display: inline;
 }
 
+#firstPage {
+  background-image: url(background-cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
 
 .cover {
-  /*z-index: 2;*/
-  background: rgba(37,42,48,0.15);
+  background: rgba(37, 42, 48, 0.25);
   min-height: 100vh;
   margin: 0;
   display: flex;
@@ -26,54 +32,82 @@ li {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-  background-image: url(background-cover.jpg);
-  /*background-repeat: no-repeat;*/
-  /*background-position: center;*/
-  /*background-size: cover;*/
-
 }
 
 #logo {
-  background-image: url(logo.jpg);
+  /*background-image: url(logo.jpg);*/
   width: 50px;
   height: 50px;
-  margin: auto;
+  margin: 30px auto 0 auto;
 }
 
 .hire {
-  /*margin-top: 25%;*/
-  /*height: 100px;*/
-  width: 500px;
-  height: auto;
-  margin: 10px auto auto auto;
-  border: 5px solid rgba(255,255,0,1);
+  width: 300px;
+  /*height: 5px;*/
+  margin: 10px auto 0 auto;
+  border: 2px solid rgba(255, 255, 0, 1);
   border-radius: 50px;
-  font-size: 30px;
+    /*font-size: 30px;*/
   text-decoration: none;
   color: white;
-  padding: 30px;
+  padding: 15px;
   text-align: center;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   transition: width 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .hire:hover {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   color: black;
-  width: 600px;
+  width: 320px;
   transition: width 0.3s, color 0.3s, background-color 0.3s;
 }
 
+.learn {
+  /*background-color: rgba(200,200,200,1);*/
+  color: lightgray;
+  margin: auto;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+
+#learn {
+  margin: 0;
+}
+
+#arrow {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+}
+
+#arrow::before {
+  content: "⌄";
+  font-size: 30px;
+}
+
 .secondPage {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .thirdPage {
   background-color: rgba(238, 238, 238, 1);
 }
 
+.fourthPage {
+  background-color: rgba(255,255,255,1);
+}
+
+.fifthPage {
+  background-color: rgba(254,215,102,1);
+  text-align: center;
+  margin: 0 auto;
+}
+
 #secondPage {
-  height: 1200px;
+  height: auto;
   width: 80%;
   position: relative;
   display: flex;
@@ -82,112 +116,209 @@ li {
   margin: auto;
 }
 
-
 #thirdPage {
-  height: 3200px;
+  height: auto;
   width: 80%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#fourthPage {
+  height: 3200px;
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#fifthPage {
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
 }
 
 #container1 {
-  width: 1000px;
-  height: auto;
   margin: 50px auto 0 auto;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
-#container2 {
+#container1_2, #container2_2 {
   display: flex;
   flex-direction: row;
-  margin: 50px auto auto auto;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#container2_2 {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 0;
+  margin-bottom: 100px;
+  border-bottom: 1px solid #d6e1e5;
 }
 
 #p1 {
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 600;
 }
 
 #p2 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 400;
+  color: rgba(100,100,100,1);
 }
 
-#section1, #section2, #section3 {
+#section1,
+#section2,
+#section3 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
+/*#section1::before {
+  content: "\f129";
+}*/
+
 #section1_1 {
-  font-size: 50px;
-  margin: auto;
+    font-size: 38px;
+  /*margin: auto;*/
   display: flex;
   flex-direction: column;
 }
 
 #section1_2 {
-  font-size: 30px;
-  margin: 40px auto auto auto;
+  font-size: 17px;
+  margin: 5px auto auto auto;
+  line-height: 35px;
   text-align: center;
-  color: rgba(147,164,170,1);
+  color: rgba(147, 164, 170, 1);
 }
 
 #email {
   text-decoration: none;
-  color: rgba(94,164,247,1);
+  color: rgba(94, 164, 247, 1);
+  border-bottom: 1px dotted rgba(94,164,247,1);
 }
 
 #email:hover {
-  color: darkblue;
+  color: rgba(30,174,219,1);
 }
 
-#project2 {
-  font-size: 50px;
+#project3 {
+    /*font-size: 50px;*/
+    width: 300px;
 }
 
 #part1 {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  padding-right: 7rem;
+  /*width: 50%;*/
+  float: left;
 }
 
 .project-tags {
   color: #b2c6cd;
-  font-size: 30px;
+    /*font-size: 30px;*/
   font-weight: 700;
   letter-spacing: 1px;
   opacity: 1;
   text-transform: uppercase;
+  padding-left: 0;
 }
 
 .project-tags::before {
   content: "\2022";
-  /*margin-right: 4px;*/
   color: yellow;
-  font-size: 1.8rem;
+    /*font-size: 1.8rem;*/
+}
+
+.projects {
+  width: 100%;
 }
 
 #part2 {
-  margin-left: 0;
   float: right;
+  margin: auto;
+}
+
+#fifth-p1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#fifth-p2 {
+  font-size: 25px;
+  width: 35%;
+  margin: auto;
+}
+
+.getStarted {
+  width: 150px;
+  margin: 60px auto 0 auto;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  transition: width 0.3s, color 0.3s, background-color 0.3s;
+}
+
+.getStarted:hover {
+  width: 200px;
+  color: rgba(255, 255, 0, 1);
+  background-color: black;
+  transition: width 0.3s, color 1s, background-color 0.8s;
+}
+
+.footer {
+  background-color: rgba(37, 42, 48, 1);
+}
+
+#footer {
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+
+/*.logo {
+  margin: auto;
+}*/
+
+.links {
+  margin: 15px auto 0 auto;
+}
+
+#links {
+  width: 30px;
+  height: auto;
 }
 
 @media (min-width: 550px) {
+  #secondPage {
+    padding-bottom: 100px;
+  }
 
-#section1 {
-}
-#section1_2 {
-    width: 100%;
-}
+  #fourthPage {
+    min-width: 80%;
+  }
 
-#part2 {
-  width: 48%;
-}
+  #container2 {
+    padding: 80px 0 20px;
+  }
+
+  #section1_2 {
+    width: 80%;
+  }
+
+  #part2 {
+    width: 48%;
+  }
 }
