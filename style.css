@@ -79,6 +79,7 @@ li {
 #arrow {
   position: absolute;
   top: 0;
+  margin-top: 99px;
   display: inline-block;
   font: 1px/1 FontAwesome;
   transform: translate(-27px);
@@ -218,6 +219,10 @@ li {
   display: flex;
   flex-direction: row;
   float: left;
+}
+
+#part1 {
+  cursor: pointer;
 }
 
 .project-tags {

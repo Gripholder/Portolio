@@ -9,46 +9,30 @@ console.log($("#arrow").css("width"))
 var arrow = $("#arrow")
 var pos = 0
 
-var arrowDown = setInterval(arrowDownFunction, 20)
+var arrowDown = setInterval(arrowDownFunction, 30)
 // var arrowUp
 
 function arrowDownFunction() {
-  if(pos < 100){
+  if(pos < 20){
     arrow.css("top", pos + "px")
     pos++
   } else {
     clearInterval(arrowDown)
-    arrowUp = setInterval(arrowUpFunction, 20)
+    arrowUp = setInterval(arrowUpFunction, 30)
   }
 }
 
-var arrowUp = setInterval(arrowUp, 20)
+var arrowUp = setInterval(arrowUp, 30)
 
 function arrowUpFunction() {
-  if(0 <= pos && pos <= 100) {
+  if(0 <= pos && pos <= 20) {
     arrow.css("top", pos + "px")
     pos--
   } else {
     clearInterval(arrowUp)
-    arrowDown = setInterval(arrowDownFunction, 20)
+    arrowDown = setInterval(arrowDownFunction, 30)
   }
 }
-
-// setInterval(function () {
-//   if (pos < 50){
-//       arrow.css("top", pos + "px")
-//       console.log(arrow.css("top"))
-//       pos++
-//       pos1--
-//   } elseif (pos1 <= 50) {
-//     arrow.css("top", pos + "px")
-//     console.log(arrow.css("top"))
-//     pos1++
-//   }
-//   // console.log(arrow)
-//   // arrow = arrow + 1
-//   console.log(arrow)
-// }, 10)
 
 function scrollToFifthPage() {
   var offset = 20;
