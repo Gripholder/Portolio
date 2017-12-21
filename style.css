@@ -10,6 +10,11 @@ h1 {
   color: white;
 }
 
+.typewrite {
+  color: white;
+  text-decoration: none;
+}
+
 li {
   list-style: none;
   display: inline;
