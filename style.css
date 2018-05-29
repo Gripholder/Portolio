@@ -346,7 +346,18 @@ li {
   height: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 450px) {
+
+  #logo {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+  }
+
+  .cover h1 {
+    font-size: 1.5rem;
+  }
+
   #secondPage {
     padding-bottom: 100px;
   }
@@ -414,5 +425,11 @@ li {
 
   #fifth-p2 {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .hire {
+    width: 50vh;
   }
 }
