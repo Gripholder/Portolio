@@ -14,7 +14,7 @@ var arrowDown = setInterval(arrowDownFunction, 30)
 
 function arrowDownFunction() {
   if(pos < 20){
-    arrow.css("top", pos + "px")
+    arrow.css("bottom", pos + "px")
     pos++
   } else {
     clearInterval(arrowDown)
@@ -26,7 +26,7 @@ var arrowUp = setInterval(arrowUp, 30)
 
 function arrowUpFunction() {
   if(0 <= pos && pos <= 20) {
-    arrow.css("top", pos + "px")
+    arrow.css("bottom", pos + "px")
     pos--
   } else {
     clearInterval(arrowUp)

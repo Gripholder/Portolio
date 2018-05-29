@@ -4,7 +4,7 @@ body {
 
 h1 {
   text-align: center;
-  margin: 0 auto 0 auto;
+  margin: auto;
   font-family: "Baloo Tammudu", sans-serif;
   font-size: 50px;
   color: white;
@@ -33,7 +33,7 @@ li {
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   height: 100%;
   width: 100%;
 }
@@ -44,7 +44,7 @@ li {
 
 .hire {
   width: 300px;
-  margin: 10px auto 0 auto;
+  margin: auto;
   border: 2px solid rgba(255, 255, 0, 1);
   border-radius: 50px;
   text-decoration: none;
@@ -83,8 +83,8 @@ li {
 
 #arrow {
   position: absolute;
-  top: 0;
-  margin-top: 99px;
+  /* top: 0; */
+  /* margin-bottom: 99px; */
   display: inline-block;
   font: 1px/1 FontAwesome;
   transform: translate(-27px);
@@ -112,7 +112,7 @@ li {
 .fifthPage {
   background-color: rgba(254, 215, 102, 1);
   text-align: center;
-  margin: 0 auto;
+  height: auto;
 }
 
 .sixthPage {
@@ -120,13 +120,13 @@ li {
 }
 
 #secondPage {
+  margin: 12vh auto;
   height: auto;
   width: 80%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
 }
 
 #thirdPage {
@@ -135,6 +135,7 @@ li {
   display: flex;
   flex-direction: column;
   margin: auto;
+  line-height: 4vh;
 }
 
 #fourthPage {
@@ -146,14 +147,26 @@ li {
 }
 
 #fifthPage {
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+#work {
+  margin: auto 10px;
+}
+
+#contact {
+  margin: 10px auto 20px auto;
+}
+
+#contact a {
+  display: block;
+  margin-bottom: 20px;
+}
+
 #container1 {
-  margin: 50px auto 0 auto;
+  margin:  0 auto;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
 }
@@ -163,6 +176,10 @@ li {
   display: flex;
   flex-direction: row;
   font-family: "Ubuntu", sans-serif;
+}
+
+#container1_2 div {
+  width: 80%;
 }
 
 #container2_2 {
@@ -254,13 +271,13 @@ li {
 }
 
 #fifth-p1 {
-  font-size: 40px;
+  font-size: 2rem;
   font-weight: 600;
 }
 
 #fifth-p2 {
   font-size: 25px;
-  width: 35%;
+  width: 60%;
   margin: auto;
 }
 
@@ -324,24 +341,73 @@ li {
   height: auto;
 }
 
-@media (min-width: 550px) {
+@media only screen and (max-width: 768px) {
   #secondPage {
     padding-bottom: 100px;
+  }
+
+  #p1 {
+    font-size: 2.9rem;
+  }
+
+  #p2 {
+    font-size: 1rem;
   }
 
   #fourthPage {
     min-width: 80%;
   }
 
+  #container1_2 {
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #container1_2 div {
+    margin: 30px;
+  }
+
   #container2 {
     padding: 80px 0 20px;
   }
 
+  #section1_1 {
+    font-size: 2.5rem;
+    margin: 20px auto 35px auto;
+  }
+
   #section1_2 {
-    width: 80%;
+    width: 95%;
+  }
+
+  #project {
+    flex-direction: column;
+  }
+
+  #project div {
+    margin: auto;
+  }
+
+  #project_des {
+    font-size:
   }
 
   #part2 {
-    width: 48%;
+    width: 90%;
+    float: none;
+  }
+
+  #fifthPage {
+    height: 100%;
+    font-family: "Ubuntu", "sans-serif";
+  }
+
+  #fifth-p1 {
+    font-size: 2rem;
+  }
+
+  #fifth-p2 {
+    font-size: 1.3rem;
   }
 }
